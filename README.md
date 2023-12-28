@@ -2,7 +2,13 @@
 A caretaker robot.
 
 
-Commands for permissions
+Commands:
+
+For Alexa: cd ~/sdk-folder/sdk-build/
+
+./SampleApplication/ConsoleSampleApplication/src/SampleApp
+
+./Integration/AlexaClientSDKConfig.json
 
 sudo chown robot /dev/gpiomem and && chmod g+rw /dev/gpiomem for gpio pins access
 
