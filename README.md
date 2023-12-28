@@ -3,6 +3,7 @@ A caretaker robot.
 
 
 Commands for permissions
+
 sudo chown robot /dev/gpiomem and && chmod g+rw /dev/gpiomem for gpio pins access
 
 Pin Connections
