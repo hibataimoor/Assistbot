@@ -151,8 +151,8 @@ process_this_frame = not process_this_frame
 # Release handle to the webcam
 video_capture.release()
 
-account_sid = "AC7016d23742fe76c7bed711f5c6917841"
-auth_token  = "179f00c3098d67675386f42e4cb47405"
+account_sid = "AccountSID"
+auth_token  = "AccountTKN"
 client = Client(account_sid, auth_token)
 recognizer = sr.Recognizer()
 try:
@@ -196,8 +196,8 @@ try:
         tts = gtts.gTTS("Ok, I will call someone to come and check on you.")
         tts.save("check.mp3")
         playsound("check.mp3")
-        call = client.calls.create(to="8177055751",
-                        from_="8336083203",
+        call = client.calls.create(to="ANumber",
+                        from_="YourNumber",
                         twiml='<Response><Say>Hello there. '+name+'    says that they are not okay. Please check on them.</Say></Response>')
         print(call.sid)
 except sr.UnknownValueError:
